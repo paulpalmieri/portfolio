@@ -62,6 +62,13 @@ p {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  width: 30vw;
+}
+
+@media only screen and (max-width: 600px) {
+  #github-container {
+    width: 96vw;
+  }
 }
 
 #github-container h2 {
@@ -70,6 +77,7 @@ p {
 
 .project {
   margin-bottom: 20px;
+  border-top: 1px solid white;
 }
 
 .project i {
@@ -80,6 +88,7 @@ p {
   text-decoration: none;
   color: var(--primary-color);
   padding: 10px;
+  margin: 10px;
   background: var(--secondary-color);
   color: var(--background);
 }
@@ -91,7 +100,11 @@ p {
 
 .project p {
   color: var(--secondary-color);
-  /* margin-top: 12px; */
+  /* margin-bottom: 5px; */
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  font-style: italic;
 }
 
 /* ----------------------------- BACKGROUND ----------------------------- */
