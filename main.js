@@ -18,7 +18,7 @@ $(document).ready(function() {
 
           console.log(has_gitpages);
           const proj_tag = `<div class="project">
-        <a href=${el.svn_url}>${lc_name}</a> ${
+        <a href=${el.svn_url}><i class="fa fa-github"></i>  ${lc_name}</a> ${
             toggle_git_pages ? has_gitpages : ""
           }
         <p>${
