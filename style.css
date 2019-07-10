@@ -5,7 +5,7 @@
   --bg-color-1: #cacaca;
   --bg-color-2: #abc4d8;
 
-  --width: 30vw;
+  --width: 40vw;
 
   --button-primary: #346485;
 }
@@ -80,15 +80,14 @@ p {
 #github-container {
   display: flex;
   flex-direction: column;
-
   margin: 10px;
   width: var(--width);
   height: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  #github-container {
-    width: 96vw;
+@media only screen and (max-width: 1600px) {
+  :root {
+    --width: 90vw;
   }
 }
 
@@ -118,7 +117,7 @@ p {
 }
 
 .project a:hover {
-  background: var(--background);
+  background: white;
   color: var(--secondary-color);
 }
 
@@ -140,12 +139,22 @@ p {
   width: var(--width);
 }
 .topics {
-  border: 1px solid rgb(0, 0, 0);
   padding: 4px 8px 6px 8px;
   margin: 8px 6px 0px 0px;
   background: var(--button-primary);
   color: white;
 }
+/* 
+.language_container {
+  align-self: flex-end;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.language {
+  padding-top: 4px;
+  align-self: flex-end;
+} */
 
 /* ----------------------------- BACKGROUND ----------------------------- */
 .bg {
