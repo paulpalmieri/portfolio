@@ -1,9 +1,13 @@
 :root {
-  --background: white;
-  --primary-color: rgb(226, 75, 75);
-  --secondary-color: #3b6179;
-  --bg-color-1: #c2c2c2;
-  --bg-color-2: #97aec2;
+  --background: white(219, 24, 24);
+  --primary-color: rgb(19, 20, 82);
+  --secondary-color: #2d495c;
+  --bg-color-1: #cacaca;
+  --bg-color-2: #abc4d8;
+
+  --width: 30vw;
+
+  --button-primary: #346485;
 }
 html {
   height: 100%;
@@ -56,13 +60,30 @@ p {
   font-size: 30px;
 }
 
+/* ----------------------------- NAV ----------------------------- */
+#nav {
+  display: flex;
+  width: var(--width);
+  justify-content: space-between;
+  align-items: flex-start;
+  /* flex-direction: column; */
+}
+
+#nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 22px;
+}
+
 /* ----------------------------- GITHUB ----------------------------- */
 
 #github-container {
   display: flex;
   flex-direction: column;
+
   margin: 10px;
-  width: 30vw;
+  width: var(--width);
+  height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -72,12 +93,15 @@ p {
 }
 
 #github-container h2 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .project {
-  margin-bottom: 20px;
-  border-top: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  border-top: 2px solid white;
 }
 
 .project i {
@@ -87,10 +111,10 @@ p {
 .project a {
   text-decoration: none;
   color: var(--primary-color);
-  padding: 10px;
-  margin: 10px;
+  padding: 12px;
+  margin-top: 5px;
   background: var(--secondary-color);
-  color: var(--background);
+  color: white;
 }
 
 .project a:hover {
@@ -101,10 +125,26 @@ p {
 .project p {
   color: var(--secondary-color);
   /* margin-bottom: 5px; */
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 12px;
+  margin-top: 10px;
+  margin-left: 2;
+  margin-bottom: 0;
   font-style: italic;
+}
+
+.topics_container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+  width: var(--width);
+}
+.topics {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 4px 8px 6px 8px;
+  margin: 8px 6px 0px 0px;
+  background: var(--button-primary);
+  color: white;
 }
 
 /* ----------------------------- BACKGROUND ----------------------------- */
