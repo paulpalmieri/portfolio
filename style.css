@@ -1,0 +1,119 @@
+:root {
+  --background: white;
+  --primary-color: #142d4c;
+  --secondary-color: #385170;
+  --accent-color: #385170;
+
+  --bg-color-1: #cbcbcc;
+  --bg-color-2: #b3b4b7;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#information {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100px;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+h2,
+p {
+  margin-top: 0px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+/* p {
+  margin-top: 5px;
+} */
+#information .fa {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--background);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+#github-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.project a {
+  /* font-style: italic; */
+  font-weight: bold;
+  border-bottom: 1px solid var(--accent-color);
+  padding-bottom: 1px;
+}
+
+.project,
+.project p,
+.project a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.project p {
+  color: var(--secondary-color);
+  margin-top: 6px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    -60deg,
+    var(--bg-color-1) 50%,
+    var(--bg-color-2) 50%
+  );
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
