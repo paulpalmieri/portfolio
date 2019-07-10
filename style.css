@@ -1,7 +1,7 @@
 :root {
   --background: white;
   --primary-color: rgb(226, 75, 75);
-  --secondary-color: #4b7fa0;
+  --secondary-color: #3b6179;
   --bg-color-1: #c2c2c2;
   --bg-color-2: #97aec2;
 }
@@ -70,6 +70,10 @@ p {
 
 .project {
   margin-bottom: 20px;
+}
+
+.project i {
+  padding-right: 4px;
 }
 
 .project a {
