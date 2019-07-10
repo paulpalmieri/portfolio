@@ -127,7 +127,7 @@ p {
   margin-top: 10px;
   margin-left: 2;
   margin-bottom: 0;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .topics_container {
