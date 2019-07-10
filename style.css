@@ -1,9 +1,9 @@
 :root {
-  --background: #e0e1e9;
-  --primary-color: #0278d3;
-  --secondary-color: #345970;
-  --bg-color-1: #dbdbdb;
-  --bg-color-2: #adcae2;
+  --background: white;
+  --primary-color: #e26352;
+  --secondary-color: #4b7fa0;
+  --bg-color-1: #c2c2c2;
+  --bg-color-2: #97aec2;
 }
 html {
   height: 100%;
@@ -51,7 +51,7 @@ p {
   margin-bottom: 0;
 }
 #container p {
-  margin-top: 0;
+  margin-top: 5px;
 }
 
 #information .fa {
@@ -65,18 +65,15 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 10px;
 }
 
 #github-container h2 {
   margin-bottom: 15px;
 }
 
-.project {
-  margin-bottom: 10px;
-}
-
 .project a {
-  font-weight: bold;
+  /* font-weight: bold; */
   border-bottom: 1px solid var(--primary-color);
   text-decoration: none;
   color: var(--primary-color);

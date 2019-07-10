@@ -52,6 +52,6 @@ $(document).ready(function() {
   });
 });
 
-$("input").on("change", function() {
-  document.documentElement.style.setProperty(`--${this.name}`, this.value);
-});
+// $("input").on("change", function() {
+//   document.documentElement.style.setProperty(`--${this.name}`, this.value);
+// });
