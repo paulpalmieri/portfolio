@@ -1,11 +1,19 @@
 :root {
-  --background: white;
-  --primary-color: #142d4c;
-  --secondary-color: #385170;
-  --accent-color: #385170;
-
-  --bg-color-1: #cbcbcc;
-  --bg-color-2: #b3b4b7;
+  --background: #e0e1e9;
+  --primary-color: #0278d3;
+  --secondary-color: #345970;
+  --bg-color-1: #dbdbdb;
+  --bg-color-2: #adcae2;
+}
+html {
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--background);
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-color);
 }
 
 #container {
@@ -15,75 +23,71 @@
   align-items: center;
 }
 
+/* input {
+  margin-top: 20px;
+  background: transparent;
+  border: transparent;
+  width: 90vw;
+  height: 30px;
+} */
+
 #information {
   display: flex;
   justify-content: space-evenly;
   width: 100px;
 }
 
-h2 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--secondary-color);
+}
+
+#container h2 {
   margin-bottom: 0;
 }
-
-h2,
-p {
-  margin-top: 0px;
+#container p {
+  margin-top: 0;
 }
 
-h2 {
-  margin-bottom: 30px;
-}
-
-/* p {
-  margin-top: 5px;
-} */
 #information .fa {
-  color: black;
+  color: var(--secondary-color);
   font-size: 30px;
-  text-decoration: none;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  background: var(--background);
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-}
+/* ----------------------------- GITHUB ----------------------------- */
+
 #github-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+}
+
+#github-container h2 {
+  margin-bottom: 15px;
+}
+
+.project {
+  margin-bottom: 10px;
 }
 
 .project a {
-  /* font-style: italic; */
   font-weight: bold;
-  border-bottom: 1px solid var(--accent-color);
-  padding-bottom: 1px;
-}
-
-.project,
-.project p,
-.project a {
-  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
   text-decoration: none;
+  color: var(--primary-color);
 }
 
 .project p {
   color: var(--secondary-color);
-  margin-top: 6px;
+  margin-top: 5px;
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-}
-
+/* ----------------------------- BACKGROUND ----------------------------- */
 .bg {
   animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(
