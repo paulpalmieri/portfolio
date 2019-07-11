@@ -80,10 +80,10 @@ const fetchGitRepos = () => {
           const proj_tag = `
               <div class="project">
                 <a href=${el.svn_url}>
-                  <i class="fa fa-github"></i>
                   ${lc_name}
+                  <i class="fa fa-github"></i>
                 </a> 
-                ${git_page_link}
+                ${""}
                 <p>
                   ${
                     el.description !== null

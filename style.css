@@ -7,17 +7,27 @@
 
   --width: 40vw;
 
-  --button-primary: #346485;
+  --button-primary: #5193be;
 }
 html {
   height: 100%;
 }
+
 body {
   padding: 0;
   margin: 0;
   background: var(--background);
   font-family: "Roboto", sans-serif;
   color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--secondary-color);
 }
 
 #container {
@@ -41,16 +51,6 @@ body {
   width: 100px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  color: var(--secondary-color);
-}
-
 #container h2 {
   margin-bottom: 0;
 }
@@ -58,6 +58,9 @@ p {
 #information .fa {
   color: var(--secondary-color);
   font-size: 30px;
+}
+#information .fa:hover {
+  color: white;
 }
 
 /* ----------------------------- NAV ----------------------------- */
@@ -85,7 +88,7 @@ p {
   height: 100%;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1300px) {
   :root {
     --width: 90vw;
   }
@@ -100,18 +103,23 @@ p {
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 18px;
-  border-top: 2px solid white;
+  border-top: 1px solid var(--secondary-color);
+
+  /* padding: 10px; */
 }
 
 .project i {
-  padding-right: 4px;
+  padding-left: 4px;
 }
 
 .project a {
   text-decoration: none;
   color: var(--primary-color);
-  padding: 12px;
-  margin-top: 5px;
+  padding: 8px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: -1px;
+  margin-left: -1px;
   background: var(--secondary-color);
   color: white;
 }
@@ -123,10 +131,10 @@ p {
 
 .project p {
   color: var(--secondary-color);
-  /* margin-bottom: 5px; */
+  margin-bottom: 0px;
   margin-top: 10px;
-  margin-left: 2;
-  margin-bottom: 0;
+  margin-left: 10px;
+  font-size: 1.1rem;
   /* font-style: italic; */
 }
 
@@ -135,14 +143,17 @@ p {
   justify-content: flex-start;
   flex-wrap: wrap;
   padding: 0px;
-  margin: 0px;
-  width: var(--width);
+  margin-left: 10px;
+  margin-bottom: 10px;
+  /* width: var(--width); */
 }
 .topics {
-  padding: 4px 8px 6px 8px;
-  margin: 8px 6px 0px 0px;
+  padding: 4px 10px 6px 10px;
+  margin: 8px 8px 0px 0px;
   background: var(--button-primary);
   color: white;
+  border-radius: 15px;
+  font-size: 0.9rem;
 }
 /* 
 .language_container {
